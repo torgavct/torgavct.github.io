@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-weight: bolder;
+  font-optical-sizing: auto;
   height: 2000px;
   margin: 0;
   padding: 0;
@@ -51,8 +51,8 @@ body {
 
 .navbar-brand {
   text-decoration: none;
-  color: black;
-  font-weight: 700;
+  color: #CC2B52;
+  font-weight: 800;
 }
 
 .bar1,
@@ -83,20 +83,20 @@ body {
   flex-direction: row;
 }
 
-main{
-  height: fit-content;
-}
-
 .hero-wrapper{
-  height: 45vh  ;
+  height: 45vh;
   position: relative;
   margin-top: 0;
   padding-top: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-wrapper > img{
+  transition: transform 1s;
+  transform: scale(1.2);
+  top: 0;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -107,13 +107,8 @@ main{
 
 .hero-content > h1, h2  {
   margin: 0;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: xx-large;
   width: 80vw;
-}
-
-.hero-overlay > div{
-  margin-top: 35%;
   
 }
 
@@ -121,4 +116,20 @@ main{
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+
+.btn{
+  margin-top: 2vh;
+  width: 158px;
+  height: 48px;
+  border-radius: 0px;
+  border-style: none;
+  background-color: #CC2B52;
+  color: white;
+}
+.btn:active{
+  background-color: white;
+  color:#CC2B52;
+  border: #CC2B52 solid 2px;
 }
