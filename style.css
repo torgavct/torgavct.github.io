@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 body {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
+  font-family: "Rubik", sans-serif;
   height: 2000px;
+  margin: 0;
+  padding: 0;
 }
 .navbar {
   background-color: white;
   padding: 10px 25px;
   position: sticky;
   top: 0;
+  margin-bottom: 0px;
+  z-index: 2;
 }
 
 .navbar-wrapper {
@@ -29,10 +34,25 @@ body {
   size: 2vh;
 }
 
-.navbar-brand{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+.right-bar{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-btn{
+  border-radius: 5px;
+  background-color: white;
+}
+
+.contact-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .bar1,
@@ -41,7 +61,7 @@ body {
   border-radius: 8px;
   width: 25px;
   height: 4px;
-  background-color:         black;
+  background-color: black;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -61,4 +81,44 @@ body {
 .navbar-brand {
   display: flex;
   flex-direction: row;
+}
+
+main{
+  height: fit-content;
+}
+
+.hero-wrapper{
+  height: 45vh  ;
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-wrapper > img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-content > h1, h2  {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+  width: 80vw;
+}
+
+.hero-overlay > div{
+  margin-top: 35%;
+  
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
