@@ -94,7 +94,7 @@ body {
 }
 
 .hero-wrapper > img{
-  transition: transform 1s;
+  transition: transform 2s;
   transform: scale(1.2);
   top: 0;
   position: absolute;
@@ -107,9 +107,12 @@ body {
 
 .hero-content > h1, h2  {
   margin: 0;
-  font-size: xx-large;
+  font-size: 7.5vw;
   width: 80vw;
-  
+}
+
+.highlight{
+  color: #AF1740;
 }
 
 .hero-content{
@@ -125,7 +128,7 @@ body {
   height: 48px;
   border-radius: 0px;
   border-style: none;
-  background-color: #CC2B52;
+  background-color: #AF1740;
   color: white;
 }
 .btn:active{
