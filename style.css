@@ -84,7 +84,7 @@ body {
 }
 
 .hero-wrapper{
-  height: 45vh;
+  height: 70vh;
   position: relative;
   margin-top: 0;
   padding-top: 0;
@@ -99,20 +99,20 @@ body {
   top: 0;
   position: absolute;
   z-index: -1;
-  width: 100%;
   opacity: 0.5;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .hero-content > h1, h2  {
   margin: 0;
-  font-size: 7.5vw;
-  width: 80vw;
+  font-size: 10vw;
+  width: 100vw;
 }
 
 .highlight{
-  color: #AF1740;
+  color: #CC2B52;
 }
 
 .hero-content{
@@ -128,7 +128,7 @@ body {
   height: 48px;
   border-radius: 0px;
   border-style: none;
-  background-color: #AF1740;
+  background-color: #CC2B52;
   color: white;
 }
 .btn:active{
