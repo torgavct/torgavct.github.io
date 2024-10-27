@@ -137,3 +137,11 @@ body {
   border: #CC2B52 solid 2px;
 }
 
+.seperator-wrapper{
+  background-color: white;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
