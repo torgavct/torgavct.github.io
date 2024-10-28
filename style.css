@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 body {
   font-family: "Public Sans", sans-serif;
   font-weight: bolder;
@@ -13,14 +13,15 @@ body {
   padding: 10px 25px;
   position: sticky;
   top: 0;
-  margin-bottom: 0px;
-  z-index: 2;
+  z-index: 1;
+  height: 4vh;
 }
 
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px black;
 }
 
 .navbar-toggle {
@@ -50,6 +51,7 @@ body {
 }
 
 .navbar-brand {
+  font-family: "Chakra Petch", sans-serif;
   text-decoration: none;
   color: #cc2b52;
   font-weight: 800;
@@ -83,29 +85,45 @@ body {
   flex-direction: row;
 }
 
+main {
+  height: fit-content;
+}
+
 .offscreen-wrapper {
+  background-color: white;
   z-index: 1;
-  background-color: rgb(34, 37, 49);
-  height: 100vh;
-  width: 100%;
+  width: 75%;
   max-width: 450px;
   position: fixed;
-  top: 0;
+  height: 100vh;
   right: -450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   font-size: 3rem;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
-.offscreen-wrapper.active{
+.offscreen-wrapper.active {
   right: 0;
 }
 
+.offscreen-item {
+  margin-top: 2vh;
+  border-bottom: solid  #cc2b52 3px;
+  width: fit-content;
+}
+
+.hero-wrapper.active {
+  transition: 0.7s ease-in-out;
+  filter: blur(5px);
+}
+
 .hero-wrapper {
+  background-image: url(./images/hero-modified\ \(2\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 70vh;
   position: relative;
   margin-top: 0;
@@ -113,18 +131,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero-wrapper > img {
-  transition: transform 2s;
-  transform: scale(1.2);
-  top: 0;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.5;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .hero-content > h1,

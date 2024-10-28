@@ -1,5 +1,6 @@
 function myFunction(x) {
   const offscreenwrapper = document.querySelector(".offscreen-wrapper");
-  x.classList.toggle("change");
+  const herowrapper = document.querySelector(".hero-wrapper");
   offscreenwrapper.classList.toggle("active");
+  herowrapper.classList.toggle("active");
 }
