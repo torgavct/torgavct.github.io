@@ -17,6 +17,9 @@ body {
   height: 4vh;
 }
 
+.navbar.active{
+  border-bottom: solid #cc2b52 1px;
+}
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -95,13 +98,14 @@ main {
   width: 75%;
   max-width: 450px;
   position: fixed;
-  height: 100vh;
+  padding-bottom: 5vh;
   right: -450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 3rem;
   transition: 0.5s ease-in-out;
+  border-bottom-left-radius: 5px;
 }
 
 .offscreen-wrapper.active {
@@ -109,7 +113,10 @@ main {
 }
 
 .offscreen-item {
+  font-size: 2.5rem;
+  font-weight:500;
   margin-top: 2vh;
+  border: none;
   border-bottom: solid  #cc2b52 3px;
   width: fit-content;
 }
@@ -124,7 +131,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   margin-top: 0;
   padding-top: 0;
