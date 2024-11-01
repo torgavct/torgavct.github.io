@@ -5,4 +5,5 @@ function myFunction(x) {
   offscreenwrapper.classList.toggle("active");
   herowrapper.classList.toggle("active");
   navbar.classList.toggle("active");
+  x.classList.toggle("change");
 }
